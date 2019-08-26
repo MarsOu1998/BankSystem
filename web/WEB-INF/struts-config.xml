@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+        "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+    <form-beans>
+        <form-bean name="loginAction" type="ActionForms.LoginActionForm"/>
+        <form-bean name="registerAction" type="ActionForms.RegisterActionForm"/>
+        <form-bean name="withdrawAction" type="ActionForms.WithdrawActionForm"></form-bean>
+        <form-bean name="depositAction" type="ActionForms.DepositActionForm"></form-bean>
+    </form-beans>
+
+    <action-mappings>
+        <action path="/Login" name="loginAction" type="Actions.LoginAction" input="/Login.jsp"/>
+        <action path="/register" name="registerAction" forward="/register.jsp"/>
+        <action path="/Register" name="registerAction" type="Actions.RegisterAction"/>
+        <action path="/Withdraw" name="withdrawAction" forward="/withdraw.jsp"></action>
+        <action path="/withdraw" name="withdrawAction" type="Actions.WithdrawAction" input="/withdraw.jsp"></action>
+        <action path="/Deposit" name="depositAction" forward="/deposit.jsp"></action>
+        <action path="/deposit" name="depositAction" type="Actions.DepositAction"></action>
+        <action path="/logout"  type="Actions.LogoutAction"></action>
+    </action-mappings>
+    <message-resources parameter="Actions.ApplicationResources"></message-resources>
+</struts-config>

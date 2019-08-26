@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="BankSystem:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BankSystem_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="BankSystem/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="BankSystem" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="struts-1.2.x" />
+          <element id="library" level="project" name="Hibernate 5.4.3-5.4.3" />
+        </element>
+      </element>
+      <element id="module-source" name="BankSystem" />
+    </root>
+  </artifact>
+</component>
